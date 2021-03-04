@@ -1,5 +1,7 @@
 # httpsink
 
+This is a test utility for running as a test http server that captures the GET/POST request along with the body and responses either immediately or serving as a blockhole used for testing external URLs used by application to validate the content as well as test read timeouts..
+
 mvn clean install
 
 
