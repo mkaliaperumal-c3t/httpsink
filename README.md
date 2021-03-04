@@ -15,3 +15,7 @@ java -jar httpsink-0.0.1-SNAPSHOT.jar --request.waitsecs=600
 On Linux servers to capture the requests redirect to files by appending 
 
 nohup java -jar httpsink-0.0.1-SNAPSHOT.jar --request.waitsecs=600 &> httpsink-capture.log &
+
+To Test this Server using curl client and use localhost in url if running from the same server..
+
+curl -X POST -d "dateTime=2021-03-04 09:07:44&cellNum=9600000019&Accuracy=-1&action=1&Latitude=0.0&sessionID=123641606&carrierID=1&msgBody=Initial simulator message&passCode=ksy8KPFgdP&psapID=1&userID=1&Longitude=0.0&" http://localhost:9123/demo/incomingtextpostservlet
